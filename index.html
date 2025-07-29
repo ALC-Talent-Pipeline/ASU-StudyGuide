@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALC Study Unlimited 目的別ガイド</title>
+    <title>ALC Study Unlimited 目的別学習ガイド</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -159,14 +159,28 @@
             height: 100px;
             margin-bottom: 4px;
         }
+        .btn-primary {
+            background-color: #B63D3D;
+            color: white;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem; /* 6px */
+            display: inline-block;
+            margin-top: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #9d2b2b; /* Darker red */
+        }
     </style>
 </head>
 <body class="bg-gray-100">
 
     <div class="container mx-auto p-4 md:p-8">
         <header class="main-header text-center mb-8 p-8 rounded-lg shadow-lg">
-            <h1 class="text-3xl md:text-4xl font-bold">ALC Study Unlimited 目的別ガイド</h1>
-            <p class="mt-2 opacity-90">あなたの目的に最適な学習プランを見つけましょう。</p>
+            <h1 class="text-3xl md:text-4xl font-bold">ALC Study Unlimited 目的別学習ガイド</h1>
+            <p class="mt-2 opacity-90">あなたの目標に最適な学習プランを見つけましょう。</p>
         </header>
 
         <div class="mb-8 overflow-x-auto bg-white rounded-lg shadow-sm">
@@ -183,11 +197,10 @@
         </div>
 
         <div class="bg-white p-6 md:p-8 rounded-lg shadow-md">
-            <!-- ガイド1: 基礎英語・やり直し英語 -->
             <div id="guide-basic" class="tab-content active guide-content">
                 <h2>基礎英語・やり直し英語</h2>
                 <div class="mb-8 pb-8 border-b border-gray-200">
-                    <h3>想定レベルと目的</h3>
+                    <h3>想定レベルと目標</h3>
                     <h4>想定レベル</h4>
                     <ul>
                         <li>TOEIC未受験 or 300点台以下</li>
@@ -285,11 +298,10 @@
                 </div>
             </div>
 
-            <!-- ガイド2: 超上級を目指す -->
             <div id="guide-advanced" class="tab-content guide-content">
                 <h2>超上級を目指す</h2>
                 <div class="mb-8 pb-8 border-b border-gray-200">
-                    <h3>想定レベルと目的</h3>
+                    <h3>想定レベルと目標</h3>
                     <h4>想定レベル</h4>
                     <ul>
                         <li>英語がそれなりに使える反面、自分で課題を感じている（TOEIC800点以上、TSST6～7以上）</li>
@@ -339,11 +351,10 @@
                 </div>
             </div>
 
-            <!-- ガイド3: ビジネス英語 -->
             <div id="guide-business" class="tab-content guide-content">
                 <h2>ビジネス英語</h2>
                 <div class="mb-8 pb-8 border-b border-gray-200">
-                    <h3>想定レベルと目的</h3>
+                    <h3>想定レベルと目標</h3>
                     <h4>想定レベル</h4>
                     <ul>
                         <li>初級（TOEIC 400点未満、TSST3以下）</li>
@@ -387,11 +398,10 @@
                 </div>
             </div>
 
-            <!-- ガイド4: リスニング強化 -->
             <div id="guide-listening" class="tab-content guide-content">
                 <h2>リスニング強化</h2>
                 <div class="mb-8 pb-8 border-b border-gray-200">
-                    <h3>想定レベルと目的</h3>
+                    <h3>想定レベルと目標</h3>
                     <h4>想定レベル</h4>
                     <ul>
                         <li>初級（TOEIC400 点未満）</li>
@@ -435,11 +445,10 @@
                 </div>
             </div>
 
-            <!-- ガイド5: スピーキング強化 -->
             <div id="guide-speaking" class="tab-content guide-content">
                 <h2>スピーキング強化</h2>
                 <div class="mb-8 pb-8 border-b border-gray-200">
-                    <h3>想定レベルと目的</h3>
+                    <h3>想定レベルと目標</h3>
                     <h4>想定レベル</h4>
                     <ul>
                         <li>初級（TSST3以下）</li>
@@ -483,11 +492,10 @@
                 </div>
             </div>
 
-            <!-- ガイド6: TOEICスコアアップ -->
             <div id="guide-toeic" class="tab-content guide-content">
                 <h2>TOEIC® L&R テスト スコアアップ</h2>
                  <div class="mb-8 pb-8 border-b border-gray-200">
-                    <h3>想定レベルと目的</h3>
+                    <h3>想定レベルと目標</h3>
                     <h4>想定レベル</h4>
                     <ul>
                         <li>TOEIC 470点突破</li>
@@ -527,7 +535,6 @@
             </div>
         </div>
 
-        <!-- 継続のための学習アドバイス -->
         <div class="mt-12 p-6 md:p-8 rounded-lg bg-white shadow-md advice-content">
             <h2>継続のための学習アドバイス</h2>
             <div class="flex flex-col gap-8">
@@ -551,6 +558,20 @@
                         <h4 class="font-bold text-lg">③気持ちが乗らないときは計画を調整しよう</h4>
                         <p>どんなに頑張っても学習に気が向かない「スランプ」は誰にでもあります。そんなときは、学習量を減らしたり、簡単な復習だけにしたりして、無理なく続けられるように工夫しましょう。あらかじめ学習に締め切り時間を決めておくと、気持ちを切り替えやすくなります。</p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 p-6 md:p-8 rounded-lg bg-white shadow-md advice-content">
+            <h2>TOEIC® L&Rテスト 詳細学習プラン</h2>
+            <div class="bg-gray-50 p-6 rounded-lg flex items-start space-x-4">
+                <div class="text-4xl" style="color: #B63D3D;">📄</div>
+                <div>
+                    <h4 class="font-bold text-lg">さらに詳しい学習プランはこちら</h4>
+                    <p>TOEIC® L&Rテストのスコアアップを目指す方向けに、目標スコア別のさらに詳細な学習プラン（超入門、500点、600点、700点、800点以上）をPDFでご用意しました。以下のボタンからご覧いただけます。</p>
+                    <a href="toeic_learning_models_20250729063556.pdf" target="_blank" class="btn-primary">
+                        詳細学習プランを見る (PDF)
+                    </a>
                 </div>
             </div>
         </div>
